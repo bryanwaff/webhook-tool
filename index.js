@@ -7,7 +7,7 @@ const app=express().use(body_parser.json());
 const verify_token=process.env.VERIFY_TOKEN;
 const myToken=process.env.MY_TOKEN;
 
-app.listen(7000||process.env.PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log('Webhook is running on port 7000');
 });
 
